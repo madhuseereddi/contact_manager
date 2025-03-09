@@ -12,7 +12,7 @@ const ContactManager = () => {
   }, []);
 
   const fetchContacts = async () => {
-    const response = await fetch('http://localhost:5000/contacts');
+    const response = await fetch('https://contact-manager-backend-ad0w.onrender.com/contacts');
     const data = await response.json();
     setContacts(data);
   };
@@ -23,14 +23,14 @@ const ContactManager = () => {
   
     if (currentContact.id) {
       // Update existing contact
-      await fetch(`http://localhost:5000/contacts/${currentContact.id}`, {
+      await fetch(`https://contact-manager-backend-ad0w.onrender.com/contacts/${currentContact.id}`, {
         method: 'PUT',
         body: JSON.stringify(currentContact),
         headers: { 'Content-Type': 'application/json' },
       });
     } else {
       // Add new contact
-      await fetch('http://localhost:5000/contacts', {
+      await fetch('https://contact-manager-backend-ad0w.onrender.com/contacts', {
         method: 'POST',
         body: JSON.stringify(currentContact),
         headers: { 'Content-Type': 'application/json' },
@@ -47,7 +47,7 @@ const ContactManager = () => {
   
   // Handle deleting a contact
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:5000/contacts/${id}`, {
+    await fetch(`https://contact-manager-backend-ad0w.onrender.com/contacts/${id}`, {
       method: 'DELETE',
     });
     fetchContacts();
