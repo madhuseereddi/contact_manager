@@ -1,0 +1,138 @@
+.full-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 2px 2px rgb(227, 226, 226);
+    width: 80%;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.head1{
+    color: palevioletred;
+    font-size: 20px;
+}
+.btn1{
+    background-color: transparent;
+    border: 0.5 solid purple;
+    color: purple;
+    border-radius: 10px;
+    font-size: 14px;
+    padding : 5px 15px;
+}
+.in-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input{
+    border: 0.5px solid rgb(232, 230, 230);
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 10px;
+
+}
+.cancel-btn{
+    height: 30px;
+    background-color: red;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn11{
+    height: 30px;
+    background-color: purple;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.inner-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    width: 80%;
+}
+
+.contact-table{
+    margin-top: 20px;
+
+}
+
+.contact-table {
+    width: 82%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;;
+  }
+  
+  .contact-table th,
+  .contact-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-table th {
+    background-color: #8be0f6;
+    color: white;
+  }
+  
+  .contact-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .contact-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .contact-table td button {
+    margin-right: 8px;
+    padding: 6px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-table td button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-table td button:focus {
+    outline: none;
+  }
+  
